@@ -6,7 +6,7 @@ json_array = '[{"id":1, "URL":"https://hogehoge"},{"id":2, "URL":"https://foo"}]
 def Json2Dict(data):
     j2p_data = json.loads(data)
 
-    url_dict = {}
+    url_dict = {}                   # 辞書格納用
 
     for d in j2p_data:
         index = d['id']
